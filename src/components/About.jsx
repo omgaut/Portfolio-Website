@@ -6,7 +6,7 @@ function About() {
     <section id="about" className="about-section py-5">
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-md-4">
+          <div className="col-md-3">
             <img src={profilePic} alt="Om Gautam" className="img-fluid smaller-profile-pic rounded-circle mb-4" />
           </div>
           <div className="col-md-8">
@@ -14,8 +14,7 @@ function About() {
               Hello, I'm <span className="text-primary">Om Gautam</span>.
             </h1>
             <p className="lead">
-              I’m a passionate Computer Science student at Georgia Tech, focusing on AI-driven applications and data
-              analysis. I thrive in building solutions that matter.
+              I’m a passionate Computer Science student at Georgia Tech, focusing on AI-driven applications and cloud computing. I thrive on building solutions that matter.
             </p>
             <div className="btn-group mt-4">
               <a href="mailto:omgaut2020@gmail.com" className="btn btn-outline-primary btn-lg" target="_blank" rel="noopener noreferrer">

@@ -221,7 +221,7 @@ function Projects() {
               <div className="card-body">
                 <h5 className="card-title">Document Parser</h5>
                 <p className="card-text">
-                  Engineered a Langchain LLM model to parse documents and store them in a vector database to inform user queries.
+                  Engineered a Langchain LLM model to parse and store documents in a vector database to inform user queries.
                 </p>
                 <div className="project-footer">
                   <div className="project-tags">

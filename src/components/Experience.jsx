@@ -63,6 +63,44 @@ function Experience() {
               </div>
             </div>
           </div>
+          {/* Experience 4: NCCU */}
+          <div className="timeline-item">
+            <div className="timeline-dot"></div>
+            <div className="timeline-date">Apr 2023 – Sep 2023</div>
+            <div className="timeline-content">
+              <h5 className="experience-title">Technical Research Project Assistant</h5>
+              <h6 className="experience-subtitle">North Carolina Central University</h6>
+              <p>
+                Worked alongside Dr. Jim Harper to collect and preprocess historical data on 800+ Omega Psi Phi Fraternity (OPPF) chapters nationwide.
+                Developed a historical visualizer tool with Angular, Bootstrap CSS, and MapBox API, to promote 
+              </p>
+              <div className="skills-used">
+                <span className="skill-tag">TypeScript</span>
+                <span className="skill-tag">Angular</span>
+                <span className="skill-tag">Bootstrap CSS</span>
+                <span className="skill-tag">MapBox API</span>
+              </div>
+            </div>
+          </div>
+          {/* Experience 5: Cisco */}
+          <div className="timeline-item">
+            <div className="timeline-dot"></div>
+            <div className="timeline-date">Jul 2022 – Aug 2022</div>
+            <div className="timeline-content">
+              <h5 className="experience-title">Global STEM Shadowee / Extern</h5>
+              <h6 className="experience-subtitle">Cisco</h6>
+              <p>
+                Shadowed Cisco software engineer on daily tasks, and assisted in the development of a network package capturing tool.
+                Competed in Cisco Hackathon, creating a Java application to help meeting scheduling in hybrid work environments.
+              </p>
+              <div className="skills-used">
+                <span className="skill-tag">Python</span>
+                <span className="skill-tag">JavaScript</span>
+                <span className="skill-tag">HTML/CSS</span>
+                <span className="skill-tag">Java</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

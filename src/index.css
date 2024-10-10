@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-top: 60px;
 }
 
 code {
@@ -14,46 +15,57 @@ code {
 
 /* Navbar */
 
-.custom-navbar {
+.navbar {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: 1.2rem; /* Increased font size */
-  padding: 20px 0;  /* Space above and below */
-  background-color: #f8f9fa; /* Light background */
-  position: fixed; /* Fixes the navbar to the top */
-  top: 0; /* Aligns the navbar to the top */
-  left: 0; /* Stretches it from the left */
-  width: 100%; /* Full-width navbar */
-  z-index: 1000; /* Ensures it stays on top of content */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
-  transition: background-color 0.3s ease;
+  font-size: 1.2rem;
+  padding: 20px 0;
+  background-color: #f8f9fa;
+  transition: all 0.3 ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.navbar.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
   font-weight: 700;
-  font-size: 1.5rem; /* Bigger logo font */
-  color: #008cba;
+  font-size: 1.5rem;
+  color: #007bff;
 }
 
 .navbar-nav .nav-link {
   font-weight: 400;
-  font-size: 1.2rem; /* Bigger text size */
+  font-size: 1.2rem;
   color: #333;
-  margin-left: 30px; /* Adds spacing between nav items */
+  margin-left: 30px;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #008cba;
+  color: #007bff;
+}
+
+.gautam {
+  color: #007bff;
 }
 
 .container {
-  max-width: 1200px; /* Constrains navbar width to center it */
+  max-width: 1200px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-.navbar {
-  padding-left: 50px; /* Space from left edge */
-  padding-right: 50px; /* Space from right edge */
-  position: fixed;
+@media (max-width: 991px) {
+  .navbar-nav .nav-link {
+    margin-left: 0;
+  }
 }
 
 /* About */
@@ -93,7 +105,7 @@ code {
 }
 
 .highlight {
-  color: #008cba; /* This matches the color of your "Om Gautam" heading */
+  color: #007bff; /* This matches the color of your "Om Gautam" heading */
 }
 
 /* Projects */
@@ -125,7 +137,7 @@ code {
 .card-title {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #008cba; /* Same color as your heading */
+  color: #007bff; /* Same color as your heading */
 }
 
 .card-text {
@@ -161,7 +173,7 @@ code {
 }
 
 .github-icon:hover {
-  color: #008cba;
+  color: #007bff;
 }
 
 .card-img-top {
@@ -189,7 +201,7 @@ code {
 .timeline {
   position: relative;
   padding: 2rem 0;
-  border-left: 6px solid #008cba; /* Thicker timeline */
+  border-left: 6px solid #007bff; /* Thicker timeline */
   margin-left: 40px; /* Adjusted margin for a balanced look */
 }
 
@@ -201,7 +213,7 @@ code {
 .timeline-item .timeline-dot {
   width: 20px;
   height: 20px;
-  background-color: #008cba;
+  background-color: #007bff;
   border-radius: 50%;
   border: 3px solid #fff; /* White border for a cleaner look */
   position: absolute;
@@ -231,7 +243,7 @@ code {
 .experience-title {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #008cba;
+  color: #007bff;
 }
 
 .experience-subtitle {
@@ -306,13 +318,36 @@ code {
 
 .skill-icon {
   margin-bottom: 10px;
-  color: #008cba; /* Brand color for icons */
+  color: #007bff; /* Brand color for icons */
 }
 
 .skill-name {
   font-size: 1.2rem;
   font-weight: 600;
   color: #333;
+}
+
+.certifications-list {
+  margin-top: 30px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.certification-item {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.certification-item strong {
+  font-weight: 700;
+  color: #333;
+}
+
+.certification-item em {
+  font-weight: 300;
+  color: #666;
 }
 
 /* Footer */
@@ -342,7 +377,7 @@ code {
 }
 
 .footer-link:hover {
-  color: #008cba; /* Matches your brand color */
+  color: #007bff; /* Matches your brand color */
 }
 
 .footer-social {
@@ -356,7 +391,7 @@ code {
 }
 
 .social-icon:hover {
-  color: #008cba; /* Matches your brand color */
+  color: #007bff; /* Matches your brand color */
 }
 
 .footer-text {

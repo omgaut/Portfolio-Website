@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Navbar() {
+const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg custom-navbar">
+    <nav className="navbar navbar-expand-lg fixed-top custom-navbar">
       <div className="container">
         <a className="navbar-brand" href="/">
-          <strong>Om Gautam</strong>
+          <h3><strong><span className="gautam">Om</span> Gautam</strong></h3>
         </a>
         <button
           className="navbar-toggler"
@@ -16,7 +16,7 @@ function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-        <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul className="navbar-nav">
@@ -40,6 +40,6 @@ function Navbar() {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;
