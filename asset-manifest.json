@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.74262a56.css",
+    "main.js": "/static/js/main.161c037f.js",
+    "static/js/453.534db5b8.chunk.js": "/static/js/453.534db5b8.chunk.js",
+    "static/media/OPPFVisualizerPhoto.png": "/static/media/OPPFVisualizerPhoto.72662bc44191a2ef905b.png",
+    "static/media/ProfessionalPhoto.png": "/static/media/ProfessionalPhoto.57f4e2ac4ff3086d883c.png",
+    "static/media/NetworkToolPhoto.png": "/static/media/NetworkToolPhoto.9bb776b873af2781a57d.png",
+    "static/media/AniMangaPhoto.png": "/static/media/AniMangaPhoto.7a9d5cfd4fbef5113694.png",
+    "static/media/DocumentParserPhoto.png": "/static/media/DocumentParserPhoto.672027e5bb306f37b577.png",
+    "static/media/ExoplanetAnalysisPhoto.png": "/static/media/ExoplanetAnalysisPhoto.dd7c4a4c938a66b8ae6a.png",
+    "static/media/OutageScraperPhoto.png": "/static/media/OutageScraperPhoto.0fb8d1219694492ac114.png",
+    "static/media/AniMangaScraperPhoto.png": "/static/media/AniMangaScraperPhoto.72f67cab06364cd3c89a.png",
+    "static/media/StockPredictionPhoto.png": "/static/media/StockPredictionPhoto.2460add60825d9512917.png",
+    "static/media/GlucoGuidePhoto.png": "/static/media/GlucoGuidePhoto.0ba8b5858f43d1bac0fa.png",
+    "index.html": "/index.html",
+    "main.74262a56.css.map": "/static/css/main.74262a56.css.map",
+    "main.161c037f.js.map": "/static/js/main.161c037f.js.map",
+    "453.534db5b8.chunk.js.map": "/static/js/453.534db5b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74262a56.css",
+    "static/js/main.161c037f.js"
+  ]
+}
