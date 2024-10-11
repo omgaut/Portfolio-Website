@@ -449,6 +449,10 @@ code {
     height: 200px;
   }
 
+  .btn-group .btn {
+    border-radius: 50px;
+  }
+
   /* Projects */
   .projects-section h2 {
     font-size: 2rem; /* Smaller heading */
@@ -528,6 +532,10 @@ code {
   .smaller-profile-pic {
     width: 150px; /* Further reduce profile image size */
     height: 150px;
+  }
+
+  .btn-group .btn {
+    border-radius: 50px;
   }
 
   /* Projects */
