@@ -399,3 +399,169 @@ code {
   font-size: 1rem;
   color: #bbb;
 }
+
+/* General Styles for Mobile (Max Width 768px) */
+@media (max-width: 768px) {
+
+  /* Body */
+  body {
+    padding-top: 60px; /* Keep padding consistent */
+    font-size: 0.9rem; /* Slightly smaller font for mobile */
+  }
+
+  /* Navbar */
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+
+  .navbar-nav .nav-link {
+    margin-left: 0; /* Remove margin between nav links */
+    padding: 10px 0;
+    font-size: 1.1rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem; /* Slightly smaller logo font for mobile */
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* About Section */
+  .about-section .lead {
+    font-size: 1.1rem; /* Smaller text size for readability */
+  }
+
+  .about-text {
+    line-height: 1.4; /* Reduce line spacing for better readability */
+  }
+
+  .smaller-profile-pic {
+    width: 200px; /* Smaller profile image */
+    height: 200px;
+  }
+
+  /* Projects */
+  .projects-section h2 {
+    font-size: 2rem; /* Smaller heading */
+  }
+
+  .card {
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 20px; /* Add spacing between cards */
+  }
+
+  /* Experience */
+  .experience-section h2 {
+    font-size: 2rem; /* Smaller heading */
+  }
+
+  .timeline {
+    margin-left: 20px; /* Adjust margin for mobile */
+    padding: 1rem 0;
+  }
+
+  .timeline-item .timeline-content {
+    margin-left: 20px; /* Adjust margin for mobile */
+  }
+
+  .timeline-item .timeline-date {
+    left: -100px; /* Adjust date position for mobile */
+    width: 80px; /* Make the date width smaller */
+    font-size: 0.8rem; /* Reduce font size for the dates */
+  }
+
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row for mobile */
+    gap: 10px; /* Reduce space between cards */
+  }
+
+  .skill-card {
+    width: 100%; /* Make skill cards full-width on mobile */
+    height: auto; /* Adjust height */
+  }
+
+  /* Footer */
+  .footer-section {
+    padding: 1rem 0;
+  }
+
+  .footer-link {
+    font-size: 1rem; /* Adjust footer link size */
+  }
+
+  .footer-text {
+    font-size: 0.9rem; /* Smaller footer text */
+  }
+}
+
+/* Small Mobile (Max Width 576px) */
+@media (max-width: 576px) {
+
+  /* Navbar */
+  .navbar-nav {
+    font-size: 0.9rem; /* Smaller nav items */
+  }
+
+  .navbar-brand {
+    font-size: 1rem; /* Smaller logo */
+  }
+
+  /* About Section */
+  .about-section .lead {
+    font-size: 1rem; /* Reduce lead text */
+  }
+
+  .about-text {
+    line-height: 1.3; /* Further reduce line spacing */
+  }
+
+  .smaller-profile-pic {
+    width: 150px; /* Further reduce profile image size */
+    height: 150px;
+  }
+
+  /* Projects */
+  .projects-section h2 {
+    font-size: 1.8rem; /* Smaller project heading */
+  }
+
+  /* Experience */
+  .experience-section h2 {
+    font-size: 1.8rem; /* Smaller experience heading */
+  }
+
+  .timeline {
+    margin-left: 20px; /* Adjust timeline for mobile */
+    padding: 1rem 0;
+  }
+
+  .timeline-item .timeline-date {
+    left: -80px; /* Adjust date position to fit smaller screens */
+    width: 60px;
+    font-size: 0.75rem; /* Make font size even smaller for the dates */
+  }
+
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* Show 2 cards per row on small mobile */
+  }
+
+  /* Footer */
+  .footer-link {
+    font-size: 0.9rem;
+  }
+
+  .footer-text {
+    font-size: 0.8rem;
+  }
+}
