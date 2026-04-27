@@ -1,33 +1,48 @@
-import { ArrowUpRight, Github } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 
 const projects = [
   {
-    name: "Tabl",
-    tagline: "AI CAD Generation",
+    name: "Tabl — AI CAD Generation Software",
     description:
-      "Generative pipeline that turns natural-language prompts into editable parametric CAD models.",
-    metric: "Reduced CAD prototyping time by 60%",
-    stack: ["PyTorch", "Diffusion", "FastAPI", "Three.js"],
-    github: "https://github.com/omgaut",
+      "Shipped a containerized text-to-CAD pipeline supporting 500+ concurrent generations and a multi-stage RAG system over 15K+ CAD docs.",
+    stack: ["React", "AWS", "TypeScript", "Redis", "Three.js"],
+    link: "https://github.com/omgaut",
   },
   {
-    name: "Amygdala",
-    tagline: "AI Executive Assistant",
+    name: "AI Executive Assistant Agent (HackMIT)",
     description:
-      "Agentic assistant that orchestrates calendar, email, and research tasks across multiple tools.",
-    metric: "Saves 8+ hrs/week per user",
-    stack: ["LangGraph", "OpenAI", "Postgres", "Next.js"],
-    github: "https://github.com/omgaut",
+      "Built an iMessage-accessible GPT agent with LangChain orchestration and per-user knowledge graphs from Gmail, Outlook, and Notion data.",
+    stack: ["TypeScript", "Python", "LangChain", "MCP", "Neo4j"],
+    link: "https://github.com/omgaut",
   },
   {
-    name: "Veritas",
-    tagline: "LLM Evaluation System",
+    name: "AI-Driven Financial Market Anomaly Detector",
     description:
-      "Multi-stage RAG pipeline indexing 15K+ documents with hallucination scoring and replay.",
-    metric: "Cut token cost by 75%",
-    stack: ["vLLM", "Qdrant", "Ray", "TypeScript"],
-    github: "https://github.com/omgaut",
+      "Trained an XGBoost-based anomaly detector on 1M+ market datapoints and built an end-to-end inference pipeline with PCA, RFE, and deployment via Next.js.",
+    stack: ["Python", "XGBoost", "Scikit-Learn", "Next.js"],
+    link: "https://github.com/omgaut",
+  },
+  {
+    name: "Network Traffic Forecasting with Multi-Layer LSTMs",
+    description:
+      "Built an end-to-end time-series forecasting pipeline on 500K+ rows and improved model error by 14.9% with distributed stacked LSTMs.",
+    stack: ["Python", "TensorFlow", "JAX", "Pandas"],
+    link: "https://github.com/omgaut",
+  },
+  {
+    name: "GlucoGuide — Health Consulting",
+    description:
+      "Health consulting platform for diabetes, utilizing TensorFlow and scikit-learn for prediction models.",
+    stack: ["TensorFlow", "Scikit-Learn", "Python"],
+    link: "https://github.com/omgaut",
+  },
+  {
+    name: "RoboInvesting Platform",
+    description:
+      "Developed an AI financial advisory app with the MERN stack, training a financial sentiment model with NLTK and scikit-learn (95% accuracy) and integrating FinBERT for tone detection on market insights scraped with Selenium.",
+    stack: ["MERN", "NLTK", "Scikit-Learn", "FinBERT", "Selenium"],
+    link: "https://github.com/omgaut",
   },
 ];
 
@@ -37,57 +52,43 @@ const Projects = () => {
       <div className="max-w-6xl mx-auto">
         <SectionHeader label="Projects" title="Selected work." />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {projects.map((p) => (
-            <article
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 border-t border-l border-border">
+          {projects.map((p, i) => (
+            <a
               key={p.name}
-              className="group relative p-6 rounded-2xl border border-border bg-card-variant hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-card overflow-hidden"
+              href={p.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative p-8 border-r border-b border-border bg-card-variant hover:bg-card transition-colors duration-300 flex flex-col"
             >
-              {/* glow */}
-              <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/20 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-
-              <div className="relative">
-                <div className="flex items-start justify-between mb-4">
-                  <div>
-                    <h3 className="font-serif text-3xl font-semibold tracking-tight">{p.name}</h3>
-                    <p className="text-sm text-primary font-mono mt-1">
-                      {p.tagline}
-                    </p>
-                  </div>
-                  <a
-                    href={p.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`${p.name} on GitHub`}
-                    className="p-2 rounded-lg border border-border hover:border-primary hover:text-primary transition-all"
-                  >
-                    <ArrowUpRight className="w-4 h-4 group-hover:rotate-45 transition-transform duration-300" />
-                  </a>
-                </div>
-
-                <p className="text-sm text-foreground/75 leading-relaxed mb-5 min-h-[60px]">
-                  {p.description}
-                </p>
-
-                <div className="pb-4 mb-4 border-b border-border">
-                  <p className="text-xs font-mono text-muted-foreground mb-1">
-                    Impact
-                  </p>
-                  <p className="text-sm font-medium text-foreground">{p.metric}</p>
-                </div>
-
-                <div className="flex flex-wrap gap-1.5">
-                  {p.stack.map((s) => (
-                    <span
-                      key={s}
-                      className="text-[10px] font-mono px-2 py-1 rounded bg-secondary text-muted-foreground"
-                    >
-                      {s}
-                    </span>
-                  ))}
-                </div>
+              <div className="flex items-start justify-between mb-6">
+                <span className="font-mono text-xs tracking-widest text-muted-foreground">
+                  // {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="w-9 h-9 rounded-full border border-primary/60 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                  <ArrowUpRight className="w-4 h-4" />
+                </span>
               </div>
-            </article>
+
+              <h3 className="font-serif text-2xl md:text-3xl font-normal tracking-tight leading-tight mb-5">
+                {p.name}
+              </h3>
+
+              <p className="text-sm md:text-base text-foreground/70 leading-relaxed mb-8 flex-1">
+                {p.description}
+              </p>
+
+              <div className="flex flex-wrap gap-2">
+                {p.stack.map((s) => (
+                  <span
+                    key={s}
+                    className="text-[10px] font-mono tracking-widest uppercase px-2.5 py-1 rounded border border-border text-muted-foreground"
+                  >
+                    {s}
+                  </span>
+                ))}
+              </div>
+            </a>
           ))}
         </div>
       </div>
