@@ -41,7 +41,7 @@ const Projects = () => {
           {projects.map((p) => (
             <article
               key={p.name}
-              className="group relative p-6 rounded-2xl border border-border bg-card hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-card overflow-hidden"
+              className="group relative p-6 rounded-2xl border border-border bg-card-variant hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-card overflow-hidden"
             >
               {/* glow */}
               <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/20 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
