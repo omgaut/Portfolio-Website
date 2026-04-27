@@ -110,7 +110,7 @@ export default {
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
         display: ["Inter", "system-ui", "sans-serif"],
-        serif: ["'Cormorant Garamond'", "Georgia", "Times New Roman", "serif"],
+        serif: ["'Fraunces'", "Georgia", "Times New Roman", "serif"],
         mono: ["JetBrains Mono", "monospace"],
       },
     },
