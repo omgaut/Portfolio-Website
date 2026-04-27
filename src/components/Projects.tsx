@@ -49,7 +49,7 @@ const Projects = () => {
               <div className="relative">
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                    <h3 className="font-display text-2xl font-bold">{p.name}</h3>
+                    <h3 className="font-serif text-3xl font-semibold tracking-tight">{p.name}</h3>
                     <p className="text-sm text-primary font-mono mt-1">
                       {p.tagline}
                     </p>

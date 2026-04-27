@@ -55,7 +55,7 @@ const Experience = () => {
               <p className="font-mono text-xs tracking-widest text-primary mb-4 uppercase">
                 {exp.dates}
               </p>
-              <h3 className="font-display text-4xl md:text-6xl font-normal tracking-tight text-foreground mb-3 leading-[1.05]">
+              <h3 className="font-serif text-5xl md:text-7xl font-medium tracking-tight text-foreground mb-3 leading-[1.05]">
                 {exp.role}
               </h3>
               <p className="font-mono text-xs tracking-widest text-muted-foreground uppercase mb-6">
