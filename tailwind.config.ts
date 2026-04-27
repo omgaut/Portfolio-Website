@@ -46,7 +46,9 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+          variant: "hsl(var(--card-variant))",
         },
+        "skills-tile": "hsl(var(--skills-tile))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
