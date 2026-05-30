@@ -26,7 +26,7 @@ const Hero = () => {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
             <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
           </span>
-          Available for AI engineering roles
+          Available for software engineering roles
         </div>
 
         <h1
@@ -40,7 +40,7 @@ const Hero = () => {
           className="text-lg md:text-xl text-muted-foreground mb-3 font-mono animate-fade-in-up"
           style={{ animationDelay: "0.25s", opacity: 0 }}
         >
-          AI Engineer <span className="text-primary mx-2">/</span> Builder
+          Software Engineer <span className="text-primary mx-2">/</span> Builder
         </p>
 
         <p

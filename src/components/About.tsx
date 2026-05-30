@@ -15,10 +15,9 @@ const About = () => {
 
         <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { k: "Focus", v: "AI Systems" },
+            { k: "Focus", v: "AI/ML Systems" },
             { k: "School", v: "Georgia Tech" },
-            { k: "Stack", v: "Python · TS · Rust" },
-            { k: "Status", v: "Building" },
+            { k: "Major", v: "Computer Science" },
           ].map((s) => (
             <div
               key={s.k}

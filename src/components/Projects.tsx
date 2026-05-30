@@ -17,17 +17,17 @@ const projects = [
     link: "https://github.com/omgaut",
   },
   {
-    name: "AI-Driven Financial Market Anomaly Detector",
+    name: "RoboInvesting Platform",
     description:
-      "Trained an XGBoost-based anomaly detector on 1M+ market datapoints and built an end-to-end inference pipeline with PCA, RFE, and deployment via Next.js.",
-    stack: ["Python", "XGBoost", "Scikit-Learn", "Next.js"],
+      "Developed an AI financial advisory app with the MERN stack, training a financial sentiment model with NLTK and scikit-learn (95% accuracy) and integrating FinBERT for tone detection on market insights scraped with Selenium.",
+    stack: ["MERN", "NLTK", "Scikit-Learn", "FinBERT", "Selenium"],
     link: "https://github.com/omgaut",
   },
   {
-    name: "Network Traffic Forecasting with Multi-Layer LSTMs",
+    name: "Veritas - Low Latency LLM Evaluation",
     description:
-      "Built an end-to-end time-series forecasting pipeline on 500K+ rows and improved model error by 14.9% with distributed stacked LSTMs.",
-    stack: ["Python", "TensorFlow", "JAX", "Pandas"],
+      "Developed hallucination detection system using Python, Pytorch, C++, and Go.",
+    stack: ["Python", "C++", "Go", "PyTorch"],
     link: "https://github.com/omgaut",
   },
   {
@@ -38,10 +38,10 @@ const projects = [
     link: "https://github.com/omgaut",
   },
   {
-    name: "RoboInvesting Platform",
+    name: "More Projects",
     description:
-      "Developed an AI financial advisory app with the MERN stack, training a financial sentiment model with NLTK and scikit-learn (95% accuracy) and integrating FinBERT for tone detection on market insights scraped with Selenium.",
-    stack: ["MERN", "NLTK", "Scikit-Learn", "FinBERT", "Selenium"],
+      "Explore various other projects on my GitHub, showcasing a range of skills in software development, machine learning, and infra across different domains.",
+    stack: ["GitHub", "AI/ML", "Infra"],
     link: "https://github.com/omgaut",
   },
 ];
