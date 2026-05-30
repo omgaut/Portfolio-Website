@@ -18,6 +18,13 @@ const experiences = [
       "Shipped low-latency trading services and internal ML tooling used across investment teams.",
   },
   {
+    company: "Tabl",
+    role: "Co-Founder",
+    dates: "2024 — 2025",
+    location: "AI CAD Generation",
+    impact: "Text-to-CAD solved. Backed by Fusen World & Christopher Klaus. Grew to 7 figure valuation.",
+  },
+  {
     company: "Georgia Tech Grid Resilience & Emergency Response (GROWER) Lab",
     role: "Lead Undergraduate Researcher",
     dates: "2025 — 2026",
